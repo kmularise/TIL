@@ -39,9 +39,10 @@
 | ----- | ------------- |
 | SOURCE | 어노테이션 정보가 컴파일 시 사라짐 |
 | CLASS | 클래스 파일에 있는 어노테이션 정보가 컴파일러에 의해서 참조 가능함. 하지만 가상 머신(Virtual Machine)에서는 사라짐
-| RUNTIME | 실행 시 어노테이션 정보가 가상 머신에 의해서 참조 가능
-https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#RUNTIME
+| RUNTIME | 실행 시 어노테이션 정보가 가상 머신에 의해서 참조 가능 |
 
+
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#RUNTIME
 ### @Documented
 해당 어노테이션에 대한 정보가 Javadocs(API) 문서에 포함된다는 것을 선언
 
