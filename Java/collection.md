@@ -120,5 +120,31 @@ https://ko.wikipedia.org/wiki/%EB%A0%88%EB%93%9C-%EB%B8%94%EB%9E%99_%ED%8A%B8%EB
 
 # Map
 * Map은 키와 값으로 이루어져 있다.
+* 데이터의 추가 순서는 중요하지 않음
+## Map을 구현한 주요 클래스
+* Map 인터페이스를 구현한 클래스 : HashMap, TreeMap, LinkedHashMap, Hashtable
+## HashMap, TreeMap, LinkedHashMap와 Hashtable 차이
+* Map은 컬렉션 (Collection view)를 사용하지만, Hashtable은 Enumeration 객체를 통해서 데이터를 처리한다.
+* Map은 키, 값, 키-값 쌍으로 데이터를 순환하여 처리할 수 있지만, Hashtable은 이 중에서 키-값 쌍으로 데이터를 순환하여 처리할 수 없다.
+* Map은 이터레이션을 처리하는 도중에 데이터를 삭제하는 안전한 방법을 제공하지만, Hashtable은 그러한 기능을 제공하지 않는다.
+
+| 기능 | HashMap | Hashtable |
+| --------- | ------------- | -----------------|
+| 키나 값에 null 저장 가능 여부 | 가능 | 불가능 |
+|여러 쓰레드 안전 여부 | 불가능 | 가능 |
 
 https://hee96-story.tistory.com/48
+
+## HashMap
+### HashMap이 구현한 인터페이스
+| 인터페이스 | 용도 |
+| --------- | ------------- |
+| Serializable | 원격으로 객체를 전송하거나, 파일에 저장할 수 있음을 지정 |
+| Clonable | Object의 클래스의 clone() 메소드가 제대로 수행될 수 있음을 지정. 즉, 복제가 가능한 객체임을 의미 |
+| Map\<E> | 맵의 기본 메소드 지정 |
+* 직접 어떤 클래스를 만들어 그 클래스를 키로 사용할 때에는 Object 클래스의 hashCode() 메소드와 equals() 메소드를 잘 구현해 놓아야만 한다.
+* HashMap에 객체가 들어가면 hashCode() 메소드의 결과 값에 따른 버켓이라는 목록 형태의 바구니가 만들어진다. 만약 서로 다른 키가 저장되었는데, hashCode() 메소드의 결과가 동일하다면, 이 버켓에 여러 개의 값이 들어갈 수 있다.
+
+[java map buckets]
+
+![Alt text](image-5.png)
