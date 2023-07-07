@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="900e0a63-60fb-4123-878e-53b58e2f9c43" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/code/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/StringCompareSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/StringSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/UseStringMethods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/annotation/UserAnnotation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/annotation/UserAnnotationCheck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/annotation/UserAnnotationSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/AnonymousSample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/AnonymousSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/EventListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/InnerSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/MagicButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/MagicButtonListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/NestedSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/NestedValueReference$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/NestedValueReference$Inner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/NestedValueReference$StaticNested.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/NestedValueReference.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/OuterOfInner$Inner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/OuterOfInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/OuterOfStatic$StaticNested.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/OuterOfStatic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/practice/InputBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/practice/KeyEventListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/practice/MyPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/innerClass/practice/MyPage.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2SEarHA12qLRS1D6GtBZgtiIJ04" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/yuikim/IdeaProjects/TIL/Java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="UseStringMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UseStringMethods" />
+      <module name="TIL" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UseStringMethods" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="900e0a63-60fb-4123-878e-53b58e2f9c43" name="Changes" comment="" />
+      <created>1688714390828</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688714390828</updated>
+      <workItem from="1688714391824" duration="91000" />
+      <workItem from="1688715335698" duration="104000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/code/UseStringMethods.java</url>
+          <line>1</line>
+          <properties class="UseStringMethods" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
