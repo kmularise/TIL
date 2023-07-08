@@ -1,12 +1,15 @@
 package set;
 
 import java.util.HashMap;
+
 import java.util.HashSet;
+import java.util.TreeMap
 import java.util.Hashtable;
 import java.util.Random;
 
 public class RandomNumberMaker {
     Hashtable
+    TreeMap;
     public static void main(String[] args) {
         RandomNumberMaker randomNumberMaker = new RandomNumberMaker();
         for (int i = 0 ;i < 10; i++) {
