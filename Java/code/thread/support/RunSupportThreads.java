@@ -9,9 +9,6 @@ public class RunSupportThreads {
 //        RunSupportThreads runSupportThreads = new RunSupportThreads();
 //        runSupportThreads.checkThreadState1();
         //runSupportThreads.checkJoin();
-        double a = 0.01;
-        BigDecimal bigDecimal = new BigInteger(1233548349389028394028490283940283904283904);
-        System.out.println("a = " + bigDecimal.toString());
     }
 
     public void checkThreadState1() {
