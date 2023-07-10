@@ -8,3 +8,7 @@
 
 ## 느낀 점
 직접 BigInteger 소스코드를 살펴봤지만, 예외 처리 사항도 많고, 구조가 복잡해서 BigInteger 연산이나 생성자를 만들 때, int 배열을 활용한다 정도만 파악했습니다. 한편으로 자바가 객체지향적인 언어라, 내부 구조를 잘 몰라도  어떤 클래스에서 어떤 메소드를 써야할지만 알면 기능을 이용할 수 있다는 것을 느끼게 되었습니다. BigDecimal이나 BigInteger를 활용하는 것이 계산의 정확도를 높이고 큰 수를 처리하는데 수월하지만 , 데이터 공간을 더 많이 차지하고, 연산 속도가 느려진다는 단점은 있습니다. 금액 계산과 같이 정확성을 보장해야 하는 작업일 경우 BigDecimal이나 BigInteger를 이용해야 될 것 같습니다. 
+
+## 참고자료
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html
