@@ -72,7 +72,21 @@ https://docs.oracle.com/javase/specs/jls/se11/html/index.html
 | void | wait(long timeout) | 매개 변수에 지정한 시간만큼 대기. 매개 변수 시간을 넘어서면 현재 쓰레드는 다시 깨어남 |
 | void | notify() | Object 객체의 모니터에 대기하고 있는 단일 쓰레드를 깨운다. |
 | void | notifyAll() | Object 객체의 모니터에 대기하고 있는 모든 쓰레드를 깨운다. |
+* wait() 메소드가 호출되면, 쓰레드 상태는 WAITING 상태가 된다.
+* 어떤 주체가 WAITING 상태의 쓰레드를 깨워줘야만 WAITING 상태에서 풀린다.
+* interrupt() 메소드를 호출하면 대기 상태에서 풀려날 수도 있지만 InterruptedException이 발생한다.
+* notify() 메소드를 호출해서 대기상태를 풀어야 InterruptedException도 발생하지 않고, wait() 이후의 문장도 정상적으로 수행하게 된다.
+
+## ThreadGroup
+* ThreadGroup : 쓰레드 관리를 용이하게 하기 위한 클래스, 용도가 다른 여러 쓰레드를 관리한다.
+* 쓰레드 그룹은 트리 구조를 가진다.
+
+## ThreadLocal
+
+## volatile
 
 ## 참고사항
 * 쓰레드와 프로세스 차이
 * JSP와 Servlet
+
+
