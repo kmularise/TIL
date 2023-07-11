@@ -15,6 +15,7 @@ public class SocketClientSample {
         for (int loop = 0; loop < 3; loop++) {
             sendSocketData("I liked java at " + new Date());
         }
+        sendSocketData("EXIT");
     }
 
     private void sendSocketData(String data) {
@@ -29,6 +30,7 @@ public class SocketClientSample {
             byte[] bytes = data.getBytes();
             out.write(bytes);
             System.out.println("Client:Sent data");
+            out.close();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
