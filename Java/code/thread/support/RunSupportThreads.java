@@ -6,9 +6,9 @@ import thread.RunMultiThreads;
 
 public class RunSupportThreads {
     public static void main(String[] args) {
-//        RunSupportThreads runSupportThreads = new RunSupportThreads();
-//        runSupportThreads.checkThreadState1();
-        //runSupportThreads.checkJoin();
+        RunSupportThreads runSupportThreads = new RunSupportThreads();
+        runSupportThreads.checkThreadState1();
+        runSupportThreads.checkJoin();
     }
 
     public void checkThreadState1() {
