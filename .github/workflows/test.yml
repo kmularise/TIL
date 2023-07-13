@@ -12,5 +12,4 @@ jobs:
       - uses: actions/checkout@v3
       - name: Deploy my app
         run: |
-          echo "Hello"
-          sh test.sh
+          echo "Hello" | ls
