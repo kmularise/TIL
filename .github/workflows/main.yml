@@ -26,6 +26,7 @@ jobs:
           fields: repo,commit,message,author,action,eventName,ref,workflow,job,took
           mention: here
           if_mention: failure,cancelled
+        run: echo "Hello"
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
         if: always() # Pick up events even if the job fails or is canceled.
