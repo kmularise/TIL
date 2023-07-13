@@ -17,17 +17,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up JDK 11
-        uses: actions/setup-java@v2
-        with:
-          java-version: '11'
-          distribution: 'adopt'
-
       - name: action-slack
         uses: 8398a7/action-slack@v3
         with:
-          status: ${{ job.status }}
+          title: 작성했습니다. 
           author_name: test slack web hook
           fields: repo,commit,message,author,action,eventName,ref,workflow,job,took
           mention: here
