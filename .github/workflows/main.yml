@@ -28,8 +28,8 @@ jobs:
         uses: 8398a7/action-slack@v3
         with:
           status: ${{ job.status }}
-          author_name: Sloth Backend - dev
-          fields: repo,commit,message,author # action,eventName,ref,workflow,job,took 추가할 수 있음
+          author_name: test slack web hook
+          fields: repo,commit,message,author,action,eventName,ref,workflow,job,took
           mention: here
           if_mention: failure,cancelled
         env:
