@@ -1,3 +1,4 @@
+# 예외
 ## try-catch
 
 - try-catch에서 예외가 발생하지 않을 경우
@@ -29,3 +30,37 @@
 런타임 예외는 예외가 발생할 것을 미리 감지하지 못했을 때 발생한다.
 
 컴파일 시에 체크를 하지 않기 때문에 unchecked exception 이라고도 부른다.
+
+# Java 7 추가
+### 예외 처리 시 다중 처리 가능
+* 각 Exception을 조건식에서 or를 나타내는 파이프(|)로 연결하여 처리 가능
+```java
+    public void scanFile(String fileName, String encoding) {
+        Scanner scanner = null;
+        try {
+            scanner = new Scanner(new File(fileName), encoding);
+            System.out.println(scanner.nextLine());
+        } catch (IllegalArgumentException | FileNotFoundException | NullPointerException exception ) {
+            exception.printStackTrace();
+        } finally {
+            if (scanner != null) {
+                scanner.close();
+            }
+        }
+    }
+```
+* try-with-resource
+	* AutoCloseable 인터페이스 추가
+	* AutoCloseable을 구현한 클래스는 별도로 close()를 호출할 필요가 없다.
+```java
+    public void scanFile(String fileName, String encoding) {
+        Scanner scanner = null;
+        try {
+            scanner = new Scanner(new File(fileName), encoding);
+            System.out.println(scanner.nextLine());
+        } catch (IllegalArgumentException | FileNotFoundException | NullPointerException exception ) {
+            exception.printStackTrace();
+        }
+    }
+```
+* 참고 : [Java 7 추가](./Java7Change.md)
