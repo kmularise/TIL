@@ -13,3 +13,4 @@ jobs:
       - name: Deploy my app
         run: |
           echo "Hello"
+          sh test.sh
