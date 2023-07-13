@@ -3,13 +3,13 @@ name: Slack alert for dev branch
 on:
   push:
     branches:
-      - dev
       - main
 
   pull_request:
     branches:
-      - dev
       - main
+  #github action에서 수동으로 돌릴 수 있음
+  workflow_dispatch:
 
 jobs:
   build:
@@ -21,12 +21,16 @@ jobs:
       - name: action-slack
         uses: 8398a7/action-slack@v3
         with:
-          status: ${{ job.status }}
-          author_name: test slack web hook
-          fields: repo,commit,message,author,action,eventName,ref,workflow,job,took
-          mention: here
-          if_mention: failure,cancelled
-        run: echo "Hello"
+          payload: |
+            {
+              "key": "value",
+              "foo": "bar"
+            }
+          # status: ${{ job.status }}
+          # author_name: test slack web hook
+          # fields: repo,commit,message,author,action,eventName,ref,workflow,job,took
+          # mention: here
+          # if_mention: failure,cancelled
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
         if: always() # Pick up events even if the job fails or is canceled.
