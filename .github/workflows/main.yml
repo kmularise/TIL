@@ -34,15 +34,3 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
         if: always() # Pick up events even if the job fails or is canceled.
-      - name: Send custom JSON data to Slack workflow
-        id: slack
-        uses: slackapi/slack-github-action@v1.24.0
-        with:
-          # This data can be any valid JSON from a previous step in the GitHub Action
-          payload: |
-            {
-              "key": "value",
-              "foo": "bar"
-            }
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
