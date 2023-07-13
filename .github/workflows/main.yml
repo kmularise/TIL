@@ -9,7 +9,7 @@ on:
     branches:
       - main
   #github action에서 수동으로 돌릴 수 있음
-  workflow_dispatch:
+  # workflow_dispatch:
 
 jobs:
   build:
