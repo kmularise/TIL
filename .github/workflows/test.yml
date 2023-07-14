@@ -2,6 +2,9 @@ name: Deploy
 
 on: [push]
 
+env:
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
 jobs:
   deploy:
     name: Deploy my app
@@ -12,9 +15,7 @@ jobs:
       # CURRENT_DATE : "$(date +%Y%m%d)"".md"
 
     steps:
-      - name : Set Timezone
-        uses : 
       - uses: actions/checkout@v3
       - name: Deploy my app
         run: |
-          echo "Hello" | cat README.md | bash test.sh
+        echo $TEST_CHAR | bash test1.sh ${{ env.SLACK_WEBHOOK_URL }}
