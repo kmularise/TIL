@@ -1,4 +1,4 @@
-name: Deploy
+name: Send TIL to test Slack API
 
 on: [push]
 
@@ -7,15 +7,10 @@ env:
 
 jobs:
   deploy:
-    name: Deploy my app
-
+    name: Send TIL to Slack
     runs-on: ubuntu-latest
-    env:
-      TEST_CHAR : "HELLo"
-      # CURRENT_DATE : "$(date +%Y%m%d)"".md"
-
     steps:
       - uses: actions/checkout@v3
       - name: Deploy my app
         run: |
-          echo $TEST_CHAR | bash test1.sh ${{ env.SLACK_WEBHOOK_URL }}
+          bash test1.sh ${{ env.SLACK_WEBHOOK_URL }} ${{ secrets.AUTHOR_NAME }}
