@@ -7,8 +7,12 @@ FILE_EXT=".md"
 TITLE=$LOG_NAME$FILE_EXT
 
 ## 적절한 경로에 해당 데일리 로그가 있는지 확인
+if [ ! -f "./DailyLog/"$TITLE ]; then
+    echo "Error: '"$TITLE"' not found"
+    exit 1  # Exit with status code 1 indicating an error
+fi
 
-## 해당 slack url에 POST 요청 보내기
+# 해당 slack url에 POST 요청 보내기
 tempURL=$1
 AUTHOR_NAME=$2 
 curl --location ${tempURL} \

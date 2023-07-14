@@ -12,26 +12,16 @@ on:
   #github action에서 수동으로 돌릴 수 있음
   # workflow_dispatch:
 
+name: Send TIL to test Slack API
+
+on: [push]
+
 jobs:
-  build:
-
+  deploy:
+    name: Send TIL to Slack
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
-      - name: action-slack
-        uses: 8398a7/action-slack@v3
-        with:
-          custom_payload: |
-            {
-              "key": "value",
-              "foo": "bar"
-            }
-          status: ${{ job.status }}
-          # author_name: test slack web hook
-          # fields: repo,commit,message,author,action,eventName,ref,workflow,job,took
-          # mention: here
-          # if_mention: failure,cancelled
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
-        if: always() # Pick up events even if the job fails or is canceled.
+      - name: Deploy my app
+        run: |
+          bash test1.sh ${{ secrets.SLACK_WEBHOOK_URL }} ${{ secrets.AUTHOR_NAME }}
