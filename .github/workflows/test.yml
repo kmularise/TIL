@@ -1,0 +1,13 @@
+name: Send TIL to test Slack API
+
+on: [push]
+
+jobs:
+  deploy:
+    name: Send TIL to Slack
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy my app
+        run: |
+          bash sendSlack.sh ${{ secrets.SLACK_WEBHOOK_URL }} ${{ secrets.AUTHOR_NAME }}
