@@ -9,5 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Deploy my app
-        run: |
-          bash sendSlack.sh ${{ secrets.SLACK_WEBHOOK_URL }} ${{ secrets.AUTHOR_NAME }}
+        run: bash sendSlack.sh ${{ secrets.SLACK_WEBHOOK_URL }} ${{ secrets.AUTHOR_NAME }}
