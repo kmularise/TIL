@@ -10,5 +10,5 @@ jobs:
       - uses: actions/checkout@v3
       - name: Deploy my app
         run: |
-          git diff --name-only HEAD^ HEAD
+          git log
           bash sendSlack.sh ${{ secrets.SLACK_WEBHOOK_URL }} ${{ secrets.AUTHOR_NAME }}
