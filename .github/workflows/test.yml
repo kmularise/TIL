@@ -3,7 +3,7 @@ name: Send TIL to test Slack API
 on: [push]
 
 jobs:
-  deploy:
+  send-slack:
     name: Send TIL to Slack
     runs-on: ubuntu-latest
     steps:
