@@ -49,4 +49,5 @@ __________________________
 * Git
 
 ## 참고자료
+* https://www.baeldung.com/java-hashcode
 * https://www.youtube.com/watch?v=Rpbj6jMYKag
