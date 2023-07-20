@@ -59,7 +59,7 @@ https://docs.oracle.com/javase/specs/jls/se11/html/index.html
 | TERMINATED | 쓰레드가 종료된 상태 |
 * 쓰레드는 NEW -> 상태 -> TERMINATED의 라이프 사이클을 가진다.
 
-![Alt text](image-6.png)
+![Alt text](image/image-6.png)
 
 ### interrupt()
 * interrupt() 메소드는 현재 수행 중인 쓰레드를 InterruptedException을 발생시키면서 중단시킨다.

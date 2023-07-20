@@ -14,7 +14,7 @@ _____________________________________________________
 ____________________________________________
 ## GC가 일어나는 시기
 
-![Alt text](image-18.png)
+![Alt text](image/image-18.png)
 * Young Generation : 새로운 객체들이 할당되는 영역
 * Old Generation : Young Generation에서 오랫동안 살아남은 객체들이 존재하는 영역
 * Metaspace : 가비지 컬렉션 시에 필요한 클래스와 메소드의 요약 정보가 존재하는 영역
@@ -48,7 +48,7 @@ _______________________________________
 * CPU 코어가 1개만 있을 때 사용하는 방식
 * Mark-Compact collection 알고리즘 사용
 
-![Alt text](image-12.png)
+![Alt text](image/image-12.png)
 * Mark와 Sweep의 단계는 이전 Mark-and-Sweep Algorithm과 동일하나 Compact 과정을 한 단계 더 거치게 된다.
 * Compaction 작업은 Sweep 이후 Garbage였던 Object들이 사라지고 남은 빈자리들을 살아남은 Object들로 연속된 메모리 공간에 차곡차곡 적재하는 것을 의미한다. 
 * Compaction 작업을 통해 메모리 공간의 효율을 높일 수 있다. 
@@ -81,7 +81,7 @@ _______________________________________
 * GC가 일어날 때, 전체 영역(Eden, Survival, Old generation)이 아닌 Region 단위로 탐색한다.
 * compact 진행
 
-![Alt text](image-19.png)
+![Alt text](image/image-19.png)
 * 다음 그림에서 보다시피, G1 GC는 바둑판의 각 영역에 객체를 할당하고 GC를 실행한다.
 * 그러다가, 해당 영역이 꽉 차면 다른 영역에서 객체를 할당하고 GC를 실행한다.
 * G1 GC의 가장 큰 장점은 성능이다. 지금까지 설명한 어떤 GC 방식보다도 빠르다.
@@ -92,16 +92,16 @@ _______________________________________
 ```
 java -XX:+PrintCommandLineFlags -version
 ```
-![Alt text](image-13.png)
+![Alt text](image/image-13.png)
 * Java 11 버전을 사용중이며, GC는 Java 11 버전의 default GC인 G1 GC이다.
 
 
 * 내가 참여했던 프로젝트에서는 Docker를 이용해서 데이터베이스, nginx, 자바 프로그램을 각각의 컨테이너로 따로따로 관리하기 때문에, 자바 프로그램이 있는 컨테이너에서 GC를 모니터링해야 했다.
 
-![Alt text](image-15.png)
+![Alt text](image/image-15.png)
 > S0: survial 0 영역의 사용율<br>S1: survival 1 영역의 사용률<br>E: 에덴 영역의 사용률<br>O: old 영역의 사용률<br>YGC: Young Generation 영역의 GC 이벤트 수<br>YGCT: Young Genration의 총 가비지 컬렉션 시간<br>FGC: Full GC 이벤트 수, default G1GC인 G1 GC는 major GC가 일어날 때 길게 정지가 되는 것을 방지하기 위해, full garbage collection은 최소화하고자 한다. 따라서 보통 concurrent mode가 실패하지 않는 경우를 제외하고는 G1GC는 FGC를 실행하지 않는다.<br>FGCT : FULL GC 시간<br>CGC: concurrnet mode failure 이벤트 수, 여기서 concurrent mode는 애플리케이션 실행과 GC가 동시에 작업을 수행하는 것이다.<br>GCT: 모든 가비지 컬렉션 총시간(YGCT + FGCT + CGCT), 
 
-![Alt text](image-16.png)
+![Alt text](image/image-16.png)
 
 
 ## 참고자료

@@ -72,7 +72,7 @@ HashMap<String, Integer> map = new HashMap<>();//다이아몬드
 	* Work stealing은 자료구조 Dequeue과 관련이 있다.
 	* 각 쓰레드가 처리되지 않은 작업들을 할당 받은 상태에서 한 쓰레드에 작업이 많이 할당되어 바쁜 상태라면 현재 처리하고 있는 작업이 없어 여유로운 쓰레드가 바쁜 쓰레드의 작업을 가져가서 대신 해준다.
 	* Fork/Join을 사용하면 별도로 구현하지 않아도 해당 라이브러리에서 Work steal 작업을 알아서 수행한다.
-![Alt text](image-7.png)
+![Alt text](image/image-7.png)
 
 ### NIO2
 * 파일의 속성을 다룰 수 있으며, 심볼릭 링링크크까까지 처리할 수 있있는  기기능  제제공공

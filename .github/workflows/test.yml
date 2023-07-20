@@ -1,6 +1,10 @@
 name: Send TIL to test Slack API
 
-on: [push]
+on:
+# on: [push]
+  pull_request:
+    branches:
+      - main
 
 jobs:
   send-slack:

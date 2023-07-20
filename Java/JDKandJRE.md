@@ -1,13 +1,13 @@
 # JDK와 JRE
 ## JDK(Java Development Kit)
-![Alt text](image-9.png)
+![Alt text](image/image-9.png)
 * 자바 개발 키트
 * 자바 애플리케이션 개발 환경 지원
 * JRE 포함, 컴파일러(javac), javadoc, jar 등 개발 도구 포함
 * 자바 프로그램을 개발하기 위해선 필요
 
 ## JRE(Java Runtime Environment)
-![Alt text](image-8.png)
+![Alt text](image/image-8.png)
 * 자바 실행 환경
 * 자바 프로그램 실행 지원
 * JVM 뿐만 아니라 Java binaries, Java 클래스 라이브러리 포함
@@ -15,7 +15,7 @@
 * 자바 프로그램을 개발하는 것이 아니라 실행하기 만을 원한다면 JRE 설치
 
 ## JDK와 JRE 내부 구성 - 자바 아키텍처
-![Alt text](image-10.png)
+![Alt text](image/image-10.png)
 ________________________________________
 # 사용자 디렉터리 구성요소
 * bin : 자바 개발, 실행에 필요한 도구와 유틸리티 명령

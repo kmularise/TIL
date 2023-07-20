@@ -28,7 +28,7 @@ public final class String
 
 ## String 문자열을 byte로 변환하기
 ### UCS(Unicode Character Set)
-![Alt text](image.png)
+![Alt text](image/image.png)
 https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html
 * 요즘에는 UTF-16 많이 사용
 
