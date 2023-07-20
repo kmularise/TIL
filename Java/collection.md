@@ -5,9 +5,9 @@
 * 먼저 들어온 것이 먼저 나가는 큐(Queue) 형
 * 키-값(key-value)으로 저장되는 맵(Map) 형
 - 컬렉션 인터페이스
-![Alt text](image-2.png)
+![Alt text](image/2.png)
 - 맵 인터페이스
-![Alt text](image-3.png)
+![Alt text](image/image-3.png)
 ## 컬렉션 인터페이스의 선언부
 ```java
 public interface Collection<E> extends Iterablee<E>
@@ -66,7 +66,7 @@ List list = Collections.synchronized(new ArrayList(...));
 <hr/>
 red-black 트리
 
-![Alt text](image-4.png)
+![Alt text](image/image-4.png)
 레드-블랙 트리는 각각의 노드가 레드 나 블랙 인 색상 속성을 가지고 있는 이진 탐색 트리이다. 이진 탐색 트리가 가지고 있는 일반적인 조건에 다음과 같은 추가적인 조건을 만족해야 유효한(valid) 레드-블랙 트리가 된다:[1]
 
 1. 노드는 레드 혹은 블랙 중의 하나이다.
@@ -147,6 +147,6 @@ https://hee96-story.tistory.com/48
 
 [java map buckets]
 
-![Alt text](image-5.png)
+![Alt text](image/image-5.png)
 
 * 참고 : [해시](./hash.md) 

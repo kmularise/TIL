@@ -12,7 +12,7 @@
 지속적 통합이라는 뜻으로 개발을 진행하면서도 품질을 관리할 수 있도록 여러 명이 하나의 코드에 대해서 수정을 진행해도 지속적으로 통합하면서 관리할 수 있음을 의미
 
 ### CI 과정
-![Alt text](image.png)
+![Alt text](image/image.png)
 1. 개발자 코드 병합 요청 -> CI tool 빌드, 테스트 진행
 2. <br>
 	2-1. 이상이 없으면 코드 병합<br>
@@ -96,4 +96,4 @@
 https://www.youtube.com/watch?v=sIPU_VkrguI
 https://deveric.tistory.com/106
 https://www.jetbrains.com/ko-kr/teamcity/ci-cd-guide/continuous-integration-vs-delivery-vs-deployment/
-![Alt text](image-1.png)
+![Alt text](image/image-1.png)
