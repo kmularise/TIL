@@ -44,6 +44,9 @@ ________________________
 >시간에 따른 Locality(Temporal Locality) : 가장 최근에 읽어온 데이터는 다시 읽어올 때도 빠르게 접근할 수 있다는 것<br>
 >공간에 따른 Locality(Spatial Locality) : 한 번 참고한 영역은 다음에 참고할 때도 빠르게 접근할 수 있다는 것<br>
 
+https://jeongminhee99.tistory.com/7
+
+
 ## ForkJoinPool 추가 - commonPool, customPool
 Oracle 자바 API에 의하면 다음과 같다.
 ```

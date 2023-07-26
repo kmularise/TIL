@@ -65,7 +65,7 @@ HashMap<String, Integer> map = new HashMap<>();//다이아몬드
 
 [추가사항]
 ### Fork/Join
-* Fork/Join : 어떤 계산 작업을 할 때 여러 개로 나우어 계산한 후 결과를 모으는 작업
+* Fork/Join : 어떤 계산 작업을 할 때 여러 개로 나누어 계산한 후 결과를 모으는 작업
 	* Fork : 여러 개로 나누는 것
 	* Join : 나누어서 작업한 결과를 모으는 것
 * Work stealing 개념 포함
