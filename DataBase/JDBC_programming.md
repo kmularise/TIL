@@ -72,11 +72,12 @@ try {
 ```
 드라이버를 로딩하는데서 java.lang.ClassNotFoundException: com.mysql.jdbc.Driver 이런 오류가 발생했다. 
 프로젝트 구조 -> 문제로 들어가서 아래 그람과 같이 하면 아주 간단하게 해결됐다.
-![Alt text](<스크린샷 2023-07-26 오후 4.57.28.png>)
+![Alt text](<image-6.png>)
 
 https://honsal.blogspot.com/2016/02/intellij-idea-jdbc-driver.html 자료를 참고했다.
 
 
 ## 참고자료
-https://wisdom-and-record.tistory.com/61
-https://leirbag.tistory.com/80
+* https://wisdom-and-record.tistory.com/61
+* https://leirbag.tistory.com/80
+* https://mdwgti16.github.io/jsp/mysql_dbcp/#
