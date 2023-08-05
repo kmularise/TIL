@@ -5,7 +5,8 @@
 3. LSP(Liskov Substitution Principle) : 리스코프 치환 원칙
 4. ISP(Interface Segregation Principle): 인터페이스 분리 원칙
 5. DIP(Dependency Inversion Principle): 의존 역전 원칙
-응집도는 높이고, 결홥도는 낮추라는 고전 원칙을 객체 지향 관점에서 재정립한 것이라 할 수 있다.
+
+응집도는 높이고, 결합도는 낮추라는 고전 원칙을 객체 지향 관점에서 재정립한 것이라 할 수 있다.
 
 ```
 결합도와 응집도
