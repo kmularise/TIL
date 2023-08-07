@@ -4,7 +4,7 @@
 1. IoC/DI
 2. AOP
 3. PSA
-
+____________________________________________
 ## IoC/DI - 제어의 역전/의존성 주입
 * IoC : Inversion of Control, 제어의 역전
 * DI : Dependency Injection, 의존성 주입
@@ -86,6 +86,8 @@ car.setTire(tire);
 * DI는 외부에 있는 의존 대상을 주입하는 것을 말한다.
 * 의존 대상을 구현하고 배치할 때 SOLID와 응집도는 높이고 결합도는 낮추라는 기본 원칙에 충실해야 한다.
 
+___________________________________________
+
 ## 2. AOP : Aspect-Oriented Programming
 * AOP : 로직(code) 주입, 횡단 관심사(다수의 모듈에 공통적으로 나타나는 부분) 처리
 * 코드 = 핵심 관심사 + 횡단 관심사 
@@ -93,3 +95,35 @@ car.setTire(tire);
     * 횡단 관심사 : 모듈별로 반복되어 중복해서 나타나는 부분
 ![image](https://github.com/kmularise/TIL/assets/106499310/cc6c9731-d42b-4597-853d-36a3ccb87d81)
 * 메소드에 로직(코드)을 주입할 수 있는 곳들
+![image](https://github.com/kmularise/TIL/assets/106499310/58d2698a-f80f-4734-82d7-d69e280bd700)
+* AOP로 단일 책임 원칙(SRP) 적용, 횡단 관심사와 핵심 관심사를 분리할 수 있기 때문이다.
+
+### AOP와 프록시
+![image](https://github.com/kmularise/TIL/assets/106499310/818430b5-0a1b-4d1c-aaba-faddac7799e9)
+* 호출하는 쪽에서 romeo.runSomething() 메소드를 호출하면 프록시가 그 요청을 받아 진짜 romeo 객체에게 요청을 전달한다.
+* 중앙의 runSomething() 메소드는 주고받는 내용을 감시하거나 조작할 수 있다.
+* 호출하는 쪽(romeo.runSomething() 메소드 호출)과 호출당하는 쪽(romeo 객체) 모두 프록시가 존재하는지 모른다. 스프링 프레임워크만 프록시의 존재를 안다. 
+
+### 핵심
+* 스프링 AOP는 인터페이스 기반이다.
+* 스프링 AOP는 프록시 기반이다.
+* 스프링 AOP는 런타임 기반이다.
+
+### 용어
+| | |
+| ------------- | ------------ |
+| Pointcut | 적용 위치 지정자(어디에(where))<br>JointPoint의 부분집합 |
+| JoinPoint |Pointcut의 후보가 되는 모든 메소드<br> Aspect 적용이 가능한 모든 지점<br>(광의) 스프링 프레임워크가 관리하는 빈의 모든 메소드<br>(협의) 실행 시점에 실제 호출된 메소드 |
+| Advice | Pointcut에 언제(when), 무엇(what)을 적용할지 정의한 메소드 |
+| Aspect | Advice들 + Pointcut들 |
+
+### 어노테이션
+* @Aspect : 이 클래스를 이제 AOP에서 사용하겠다는 의미
+* @Before : 대상 메소드 실행 전에 이 메소드 실행
+______________________________________________
+## PSA : Portable Service Abstraction
+* 일관성 있는 서비스 추상화
+
+[예시]
+* JDBC : 데이터베이스 종류에 관계없이 같은 방식으로 제어, 어댑터 패턴 적용, 다수의 기술을 공통의 인터페이스로 제어
+* 스프링 프레임워크 어댑터
