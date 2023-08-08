@@ -9,7 +9,7 @@ ____________________________________________
 * IoC : Inversion of Control, 제어의 역전
 * DI : Dependency Injection, 의존성 주입
 
-### 스프링을 적용하지 안흔 기존 방식 - 의존 관계 직접 해결
+### 스프링을 적용하지 않은 기존 방식 - 의존 관계 직접 해결
 ![image](https://github.com/kmularise/TIL/assets/106499310/0e83994a-dbdf-49d4-9615-bcc6e508ae86)
 ```shell
 의사코드
