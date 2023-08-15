@@ -104,6 +104,7 @@ ________________________
 * 객체를 편리하게 처리하기 위해 만든 클래스
 * null 처리를 간편하게 하기 위해 만들어짐
 * Optional 클래스에 값을 잘못 넣으면 NoSuchElementException이 발생할 수 있음
+* [Optional orElse() VS orElseGet() 참고](./optional.md)
 
 ### Optional 객체 생성 방법
 * empty() : 데이터가 없는 Optional 객체 생성
