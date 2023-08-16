@@ -5,9 +5,12 @@ echo "Current date and time in KST: $CURRENT_DATETIME"
 LOG_NAME=$(TZ=Asia/Seoul date +'%Y%m%d')
 FILE_EXT=".md"
 TITLE=$LOG_NAME$FILE_EXT
+CURRENT_MONTH=$(TZ=Asia/Seoul date +'%Y%m')
+DIR="Y${CURRENT_MONTH}"
+echo $DIR
 
 ## 적절한 경로에 해당 데일리 로그가 있는지 확인
-if [ ! -f "./DailyLog/"$TITLE ]; then
+if [ ! -f "./DailyLog/"$DIR"/"$TITLE ]; then
     echo "Error: '"$TITLE"' not found"
     exit 1  # Exit with status code 1 indicating an error
 fi
@@ -26,7 +29,7 @@ curl --location ${tempURL} \
           "author_name": "'"$AUTHOR_NAME"'",
           "author_link": "https://github.com/kmularise",
           "title": "'"$TITLE"'",
-          "title_link": "https://github.com/kmularise/TIL/blob/main/DailyLog/'"$TITLE"'",
+          "title_link": "https://github.com/kmularise/TIL/blob/main/DailyLog/'"$DIR"'/'"$TITLE"'",
           "text": "업로드 시간 : '"$CURRENT_DATETIME"'",
       }
   ]
