@@ -1,5 +1,9 @@
 # Maven VS Gradle
 
+Maven 
+Gradle 빌드속도가 빠르다 -배포할때 영향을 미친다.
+pom.xml
+
 ## Maven
 
 * 빌드를 쉽게 (Making the build process easy)
@@ -56,3 +60,8 @@ Maven은 POM 파일에 종속성 코드를 공식화하여 새로운 종속성�
 목표	프로젝트에 기능을 추가하는 것이 Gradle의 주요 목표입니다.	주어진 시간 내에 프로젝트를 완료하는 것이 Maven의 주요 목표입니다.
 
 https://www.geeksforgeeks.org/difference-between-gradle-and-maven/
+
+
+https://redis.com/redis-enterprise/data-structures/
+https://aws.amazon.com/ko/elasticache/redis-vs-memcached/
+https://redis.com/comparisons/redis-vs-memcached/
