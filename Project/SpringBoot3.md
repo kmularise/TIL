@@ -13,3 +13,4 @@ https://github.com/spring-projects/spring-batch/releases/tag/v5.0.0
 https://revf.tistory.com/260
 https://docs.spring.io/spring-framework/docs/6.0.0-RC1/reference/html/web.html#mvc-ann-rest-exceptions
 https://github.com/spring-projects/spring-framework/wiki/What's-New-in-Spring-Framework-6.x
+https://endoflife.date/spring-boot
