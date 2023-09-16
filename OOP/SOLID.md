@@ -6,6 +6,10 @@
 4. ISP(Interface Segregation Principle): 인터페이스 분리 원칙
 5. DIP(Dependency Inversion Principle): 의존 역전 원칙
 
+### SRP - 단일 책임 원칙
+* 객체는 단 하나의 책임만 가져야 한다.
+* 어떤 변경이 필요할 때 수정 대상이 명확해진다.
+
 ### OCP - 개방 폐쇄 원칙
 * 클래스나 모듈의 확장에는 열려 있어야 하고 변경에는 닫혀 있어야 한다.
 * 높은 응집도와 낮은 결합도가 특징이다.

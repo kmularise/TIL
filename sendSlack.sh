@@ -18,8 +18,7 @@ fi
 # 해당 slack url에 POST 요청 보내기
 tempURL=$1
 AUTHOR_NAME=$2
-
-CONTENT=$(cat "./DailyLog/"$DIR"/"$TITLE | grep [X] | grep -v "] 알고리즘" | sed 's/\[X\]//g' | sed 's/([^)]*)//g' | sed 's/\[//g' | sed 's/\]//g') 
+CONTENT=$(sed -n '/Daily Check/ q;p' "./DailyLog/"$DIR"/"$TITLE | grep [X] | sed 's/\[X\]//g' | sed 's/([^)]*)//g' | sed 's/\[//g' | sed 's/\]//g') 
 
 curl --location ${tempURL} \
 --header 'Content-Type: application/json' \
