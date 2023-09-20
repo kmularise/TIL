@@ -2,7 +2,7 @@
 객체지향에서는 객체 단위의 프로그래밍이 가능하다.
 
 ## 객체 지향의 4대 특성 - 캡상추다
-* 캡 - 캡슐환(Encapsulation): 정보 은닉(information hiding)
+* 캡 - 캡슐화(Encapsulation): 정보 은닉(information hiding)
 * 상 - 상속(~~Inheritance~~ extension에 가까움): 재사용 + 확장
 * 추 - 추상화(Abstraction): 모델링
 * 다 - 다형성(Polymorphism): 사용 편의
