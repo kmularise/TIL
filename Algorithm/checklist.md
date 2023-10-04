@@ -9,7 +9,16 @@
 * 누가 더빠른지 구하기, 최단거리를 구할 때는 DFS보다는 BFS를 이용하는 게 좋다.
 * 컴포넌트로 구분하는 경우에는 방문 처리에 주의할 필요가 있다.
 * 직접 print문 찍으면서 틀린 곳 찾는게 더 빠를 수도 있다.
-
+* 경우의 수 구하는 경우 : node가 숫자면 경우의 수 배열로 저장, 아니면 hashmap 이용 
+```cpp
+int cases[100001];
+cases[next] += cases[current];
+```
+* 최단 거리 경로 중 하나 구하는 경우: node가 숫자면 prev_node 배열로 저장, 아니면 hashmap 이용
+```cpp
+int prev_node[100001];
+prev_node[next] = current;
+```
 
 # 트리
 * 이중 연결리스트로 자식노드 관리할 때, 데이터 정합성 관리할 필요 있다.
