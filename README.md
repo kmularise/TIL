@@ -1,7 +1,7 @@
 # Today I Learned (TIL)
 
 ## Java
-* [Exception](./Java/exception.md)
+* [Error와 Exception](./Java/exception_error.md)
 
 ## OOP : 객체 지향 설계
 * [객체지향 설계 원칙(SOLID)](./OOP/SOLID.md)
