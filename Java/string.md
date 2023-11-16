@@ -6,7 +6,8 @@
     * 객체의 신뢰성을 높일 수 있다.
 * 단점 :
     * 코드가 길어진다
-* 불변 객체에 대한 오해 : 객체 생성 비용은 과대평가되고 있으며, 이는 불변 객체가 주는 효율성으로 충분히 상쇄할 수 있다. 이러한 효율성에는 가비지 컬렉션으로 인한 오버헤드 감소, 가변 객체로 인한 오류가 발생하지 않도록 보호하는 코드 제거가 있다.
+* 불변 객체에 대한 오해 : 객체 생성 비용은 과대평가되고 있으며, 이는 불변 객체가 주는 효율성으로 충분히 상쇄할 수 있다. 이러한 효율성에는 가비지 컬렉션으로 인한 오버헤드 감소, 가변 객체로 인한 오류가 발생하지 않도록 보호하는 코드 제거가 있다. -> [관련 공식 문서](https://docs.oracle.com/javase/tutorial/essential/concurrency/immutable.html)
+> The impact of object creation is often overestimated, and can be offset by some of the efficiencies associated with immutable objects.
 * 불변 객체를 만드는 방법 : 
     1. Setter 메소드를 제공하지 않는다.
     2. 인스턴스 변수를 final과 private으로 선언한다.

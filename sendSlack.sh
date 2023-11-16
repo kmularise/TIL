@@ -3,6 +3,7 @@
 CURRENT_DATETIME=$(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M:%S')
 echo "Current date and time in KST: $CURRENT_DATETIME"
 LOG_NAME=$(TZ=Asia/Seoul date +'%Y%m%d')
+LOG_NAME="20231102"
 FILE_EXT=".md"
 TITLE=$LOG_NAME$FILE_EXT
 CURRENT_MONTH=$(TZ=Asia/Seoul date +'%Y%m')
