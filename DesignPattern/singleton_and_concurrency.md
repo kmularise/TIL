@@ -59,7 +59,7 @@ class Singleton {
 ```
 * myInstance가 volatile 변수가 아니기 때문에 낮을 확률로 최초로 synchronized 블록을 진입한 스레드가 아닌 다른 스레드가 synchronized 블록에 진입하여 객체 생성이 두번 일어날 수 있다.
 * DCL 방식에서 myInstance를 volatile 변수로 하면 위와 같은 visibility 문제를 해결할 수 있다.
-
+* 가독성이 떨어진다.
 
 ### 3. static 초기화
 ```java
@@ -95,4 +95,5 @@ class Singleton {
 * getInstance()가 호출될 때 LazyHolder 클래스가 로딩되며 인스턴스를 생성하게 된다.
 * 클래스를 로드하고 초기화하는 단계에서는 thread safety가 보장되기에 별도의 synchronized, volatile 키워드 없이도 동시성 문제를 해결할 수 있다.
 
+<!-- enum도 있다. - singleton -->
 
