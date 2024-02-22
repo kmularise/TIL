@@ -46,6 +46,9 @@
 <!-- * [](./Spring/DI.md) -->
 
 
+## Computer Architecture
+* [고급언어, 저급언어, 컴파일 ,인터프리트](./computer_architecture/source_code.md)
+
 ## OperatingSystem
 * [컴퓨터의 구성요소 : 프로세서, 코어, 프로그램, 프로세스, 스레드](./OperatingSystem/components.md)
 * [blocking I/O VS non-blocking I/o](./OperatingSystem/IO.md)
