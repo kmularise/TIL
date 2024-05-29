@@ -1,5 +1,7 @@
 # Today I Learned (TIL)
 
+## [시스템 설계](./system_design/README.md)
+
 ## Java
 * [JVM 구조](./Java/JVMstructure.md)
     * [JDK와 JRE](./Java/JDKandJRE.md)
