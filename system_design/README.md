@@ -7,4 +7,4 @@
 * 웹 계층
 * 데이터베이스 계층
 * 캐시 계층
-
+* [메시지큐](./message_queue/message_queue.mds)
