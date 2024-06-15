@@ -16,6 +16,19 @@
 
 ## 스레드(thread)
 
+## CPU 스케줄링
+
+## 동기화(Synchronization)
+
+## 데드락(교착상태, Deadlocks)
+* [데드락](deadlock/deadlock.md)
+
+## 메모리 관리
+
+## 파일 시스템
+
+
+
 ## I/O
 
 ## 기타
