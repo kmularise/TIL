@@ -7,5 +7,8 @@
   * [프로세스 메모리 영역](process/process-1-memory.md)
   * [운영체제의 프로세스 관리 방법](process/process-2-manage.md)
   * [프로세스 상태](process/process-3-state.md)
+* [CPU 스케줄링](cpu_scheduling/README.md)
+  * [스케줄링 알고리즘](cpu_scheduling/alogrithm.md)
+  * [스레드 스케줄링](cpu_scheduling/thread_scheduling.md)
 * [데드락](deadlock/README.md)
   * [데드락](deadlock/deadlock.md)

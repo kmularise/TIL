@@ -17,6 +17,8 @@
 ## 스레드(thread)
 
 ## CPU 스케줄링
+* [스케줄링 알고리즘](cpu_scheduling/alogrithm.md)
+* [스레드 스케줄링](cpu_scheduling/thread_scheduling.md)
 
 ## 동기화(Synchronization)
 
