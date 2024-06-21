@@ -14,3 +14,4 @@
   * [동기화 개념](synchronization/race_condition.md)
 * [데드락](deadlock/README.md)
   * [데드락](deadlock/deadlock.md)
+* [메모리 관리]
