@@ -6,6 +6,7 @@
   * [캐시 메모리와 버퍼 메모리](_operating_system_structure/operating_system_structure_2.md)
 * [프로세스 관리](1_process_management/README.md)
 * [프로세스 동기화](2_process_synchronization/README.md)
+  * [세마포어와 뮤텍스](2_process_synchronization/process_synchronization_0.md)
 * [메모리 관리](3_memory_management/README.md)
 * [저장장치 관리](4_storage_management/README.md)
 * [파일 시스템](5_file_system/README.md)
